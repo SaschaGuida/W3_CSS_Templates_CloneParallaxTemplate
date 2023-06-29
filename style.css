@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&family=Poppins:ital,wght@0,500;1,200&display=swap');
+
+body, html {
+    height: 100%;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3, h4 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+/* STILE NAVBAR */
+
+.mobilenav {
+    display: none;
+}
+
+.nav-bar {
+    background-color: #ffffff00;
+    width: 100%;
+    padding: 5px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+    .navleft {
+        display: flex;
+        list-style: none;
+    }
+
+    .menu li {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 700;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+
+    .nav-bar-scrolled {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-bar i {
+        padding-right: 5px;
+    }
+
+    .nav-bar li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .nav-bar li a:hover {
+        background-color: #ddd;
+    }
+
+
+/* STILE PARALLAX ABOUT */
+
+.parallax1 {
+    background-image: url('./img/parallax2.jpg');
+    height: 100%; 
+    /* CREA L'EFFETTO DI SCROLLING DEL PARALLAX */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 .titolo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(86, 86, 86, 0.7); /* Colore di sfondo con opacità */
+    text-align: center;
+}
+
+
+.about {
+    margin-top: 20px;
+}
+
+.about-parallax {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.parallax1 .about {
+    display: flex;
+    height: 1000px;
+    background-color: #ececec;
+}
+
+.card {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-color: white;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-image {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-details {
+    flex-basis: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-details h3 {
+    align-self: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-details p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #858585;
+    padding-bottom: 3px;
+}
+
+.skills {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+.custom-color {
+    background-color: #535353;
+}
+
+.counter {
+    width: 100%;
+    height: 150px;
+    color: #ffffff;
+    background-color: #616161;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-counter {
+    font-size: 35px;
+    width: 25%;
+    text-align: center;
+}
+
+.col-counter p {
+    font-size: 15px;
+}
+
+
+/* STILE PARALLAX WORK */
+
+.parallax2 {
+    background-image: url('./img/parallax1.jpg');
+    height: 50%; 
+    /* CREA L'EFFETTO DI SCROLLING DEL PARALLAX */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.parallax2 .work {
+    height: 1000px;
+    background-color: #ececec;
+    font-size: 36px;
+}
+
+.work-parallax h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.work-parallax, .work-gallery1, .work-gallery2 {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.work-gallery1 img {
+    width: 20%;
+}
+
+.work-gallery2 img {
+    width: 20%;
+}
+
+
+
+
+/* STILE PARALLAX CONTACT */
+
+.parallax3 {
+    background-image: url('./img/parallax3.jpg');
+    height: 50%; 
+    /* CREA L'EFFETTO DI SCROLLING DEL PARALLAX */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3, .contact {
+    background-color: #ececec;
+}
+
+.contact {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.parallax3 .contact {
+    display: flex;
+    height: 1000px;
+    background-color: #ececec;
+}
+
+
+/* STYLE FOOTER */
+
+.footer {
+    background-color: #8a8a8a;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+@media (max-width: 545px) {  /* Dispositivi con larghezza massima di 480px (es. smartphone) */
+
+    .nav-bar {
+        display: none;
+    }
+
+    .mobilenav {
+        display: flex;
+        background-color: #ffffff00;
+        width: 100%;
+        padding: 5px 20px;
+        color: rgb(255, 255, 255);
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .mobilenav-scrolled {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card p {
+        display: none;
+    }
+
+    .card .card-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .work-parallax, .work-gallery1, .work-gallery2 {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .work-gallery1 img {
+        width: 100%;
+    }
+    
+    .work-gallery2 img {
+        width: 100%;
+    }
+}
